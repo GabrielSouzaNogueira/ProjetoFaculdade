@@ -1,0 +1,83 @@
+/* Login.css */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%); /* Fundo degradê combinando com a sidebar */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.card h1 {
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db; /* Cor de destaque ao clicar */
+}
+
+.mensagem-erro {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #f5c6cb;
+}
+
+button[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+button[type="submit"]:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+/* Responsividade simples para celulares */
+@media (max-width: 480px) {
+    .card {
+        margin: 20px;
+        padding: 30px;
+    }
+}

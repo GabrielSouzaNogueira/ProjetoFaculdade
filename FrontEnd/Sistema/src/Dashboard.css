@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #3498db;
+  --success-color: #27ae60;
+  --danger-color: #e74c3c;
+  --text-light: #ecf0f1;
+  --bg-body: #f4f7f6;
+}
+
+.dashboard-layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-body);
+}
+
+.sidebar {
+  width: 260px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.sidebar-header {
+  padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.menu-lateral {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #bdc3c7;
+  padding: 1rem 2rem;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu-btn:hover, .menu-btn.ativo {
+  background-color: var(--secondary-color);
+  color: white;
+  border-left: 4px solid var(--accent-color);
+}
+
+.btn-sair {
+  margin-top: auto;
+  color: #e74c3c;
+}
+
+.conteudo-principal {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
